@@ -1,0 +1,36 @@
+GOAL: COMBINE 4 ordered files into 1 list of dictionaries.
+
+pseudocode:
+create empty food list
+
+def open(file):
+	use with open...as to open file for reading
+		read file as list using .read().splitlines()
+	return list
+
+def clean([list]):
+	create empty cleaned list
+	check for missing data indices (if item in list == \n)
+		append to list of indices to remove
+	check for corruption indices (if item != yes/no
+		append to list of indices to remove
+	check for duplication indices (if count(item) > 1)
+		append to list of indices to remove
+	add good elements to cleaned list
+	return cleaned list
+
+def dictionary([list]):
+	iterate through list length:
+	for index in list length:
+		create dictionary with list entries for index
+		append dictionary to food list
+	return dictionary
+
+def json(dict):
+	save complete list of dictionaries as json file with dumps
+
+
+
+	
+
+
